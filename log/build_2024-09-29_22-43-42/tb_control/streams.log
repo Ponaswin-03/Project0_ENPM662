@@ -1,0 +1,40 @@
+[0.332s] Invoking command in '/home/ponaswin/testWS/src/tb_control': PYTHONPATH=/home/ponaswin/testWS/src/tb_control/build/tb_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/tb_control build --build-base /home/ponaswin/testWS/src/tb_control/build/tb_control/build install --record /home/ponaswin/testWS/src/tb_control/build/tb_control/install.log --single-version-externally-managed install_data
+[0.527s] running egg_info
+[0.527s] creating build/tb_control/tb_control.egg-info
+[0.528s] writing build/tb_control/tb_control.egg-info/PKG-INFO
+[0.528s] writing dependency_links to build/tb_control/tb_control.egg-info/dependency_links.txt
+[0.528s] writing entry points to build/tb_control/tb_control.egg-info/entry_points.txt
+[0.528s] writing requirements to build/tb_control/tb_control.egg-info/requires.txt
+[0.528s] writing top-level names to build/tb_control/tb_control.egg-info/top_level.txt
+[0.528s] writing manifest file 'build/tb_control/tb_control.egg-info/SOURCES.txt'
+[0.529s] reading manifest file 'build/tb_control/tb_control.egg-info/SOURCES.txt'
+[0.529s] writing manifest file 'build/tb_control/tb_control.egg-info/SOURCES.txt'
+[0.529s] running build
+[0.529s] running build_py
+[0.529s] creating /home/ponaswin/testWS/src/tb_control/build/tb_control/build
+[0.529s] creating /home/ponaswin/testWS/src/tb_control/build/tb_control/build/lib
+[0.530s] creating /home/ponaswin/testWS/src/tb_control/build/tb_control/build/lib/tb_control
+[0.530s] copying tb_control/tb_accdec.py -> /home/ponaswin/testWS/src/tb_control/build/tb_control/build/lib/tb_control
+[0.530s] copying tb_control/tb_openLoop.py -> /home/ponaswin/testWS/src/tb_control/build/tb_control/build/lib/tb_control
+[0.530s] copying tb_control/__init__.py -> /home/ponaswin/testWS/src/tb_control/build/tb_control/build/lib/tb_control
+[0.530s] running install
+[0.530s] running install_lib
+[0.530s] creating /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages/tb_control
+[0.530s] copying /home/ponaswin/testWS/src/tb_control/build/tb_control/build/lib/tb_control/tb_accdec.py -> /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages/tb_control
+[0.530s] copying /home/ponaswin/testWS/src/tb_control/build/tb_control/build/lib/tb_control/tb_openLoop.py -> /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages/tb_control
+[0.530s] copying /home/ponaswin/testWS/src/tb_control/build/tb_control/build/lib/tb_control/__init__.py -> /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages/tb_control
+[0.530s] byte-compiling /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages/tb_control/tb_accdec.py to tb_accdec.cpython-310.pyc
+[0.531s] byte-compiling /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages/tb_control/tb_openLoop.py to tb_openLoop.cpython-310.pyc
+[0.532s] byte-compiling /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages/tb_control/__init__.py to __init__.cpython-310.pyc
+[0.532s] running install_data
+[0.532s] creating /home/ponaswin/testWS/src/tb_control/install/tb_control/share/ament_index
+[0.532s] creating /home/ponaswin/testWS/src/tb_control/install/tb_control/share/ament_index/resource_index
+[0.532s] creating /home/ponaswin/testWS/src/tb_control/install/tb_control/share/ament_index/resource_index/packages
+[0.532s] copying resource/tb_control -> /home/ponaswin/testWS/src/tb_control/install/tb_control/share/ament_index/resource_index/packages
+[0.533s] copying package.xml -> /home/ponaswin/testWS/src/tb_control/install/tb_control/share/tb_control
+[0.533s] running install_egg_info
+[0.535s] Copying build/tb_control/tb_control.egg-info to /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages/tb_control-0.0.0-py3.10.egg-info
+[0.535s] running install_scripts
+[0.557s] Installing tb_openLoop script to /home/ponaswin/testWS/src/tb_control/install/tb_control/lib/tb_control
+[0.557s] writing list of installed files to '/home/ponaswin/testWS/src/tb_control/build/tb_control/install.log'
+[0.575s] Invoked command in '/home/ponaswin/testWS/src/tb_control' returned '0': PYTHONPATH=/home/ponaswin/testWS/src/tb_control/build/tb_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ponaswin/testWS/src/tb_control/install/tb_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/tb_control build --build-base /home/ponaswin/testWS/src/tb_control/build/tb_control/build install --record /home/ponaswin/testWS/src/tb_control/build/tb_control/install.log --single-version-externally-managed install_data

@@ -10,16 +10,15 @@ class openloopmv(Node):
         super().__init__('mvtb3_openloop')
         self.vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
         self.linear_speed_x = 0.3
-        self.positions = []  # List to store the position over time
-        self.times = []  # List to store the time data
-        self.current_position = 0.0  # Initialize position
-        self.start_time = time.time()  # Track start time
+        self.pos = []  
+        self.t = []  
+        self.current_position = 0.0  #
+        self.start_time = time.time()  
 
     def record_position(self):
-        """Record the current position and time."""
         current_time = time.time() - self.start_time
-        self.positions.append(self.current_position)
-        self.times.append(current_time)
+        self.pos.append(self.current_position)
+        self.t.append(current_time)
 
     def move(self, mv_duration):
         start = time.time()
@@ -29,23 +28,20 @@ class openloopmv(Node):
             self.vel_pub.publish(mv_value)
             self.get_logger().info("Moving at a speed of %.2f m/s" % self.linear_speed_x)
             
-            # Update position (distance = speed * time)
-            self.current_position += self.linear_speed_x * 0.1  # Assuming loop rate is 0.1 seconds
+            self.current_position += self.linear_speed_x * 0.1  
             self.record_position()
             
-            time.sleep(0.1)  # Loop rate of 100 ms
+            time.sleep(0.1) 
         
         mv_value.linear.x = 0.0
         self.vel_pub.publish(mv_value)
         self.get_logger().info('Stopped after %.2f seconds' % mv_duration)
         
-        # Plot position over time
         self.plot_position_over_time()
 
     def plot_position_over_time(self):
-        """Plot the position of the robot over time."""
         plt.figure()
-        plt.plot(self.times, self.positions, label='Position (m)')
+        plt.plot(self.t, self.pos, label='Position (m)')
         plt.title('Robot Position Over Time')
         plt.xlabel('Time (s)')
         plt.ylabel('Position (m)')
@@ -56,7 +52,7 @@ class openloopmv(Node):
 def main():
     rclpy.init()
     mvtb3_openloop = openloopmv()
-    mvtb3_openloop.move(5.0)  # Move for 5 seconds
+    mvtb3_openloop.move(5.0)  
     rclpy.spin(mvtb3_openloop)
     rclpy.shutdown()
 

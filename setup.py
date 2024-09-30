@@ -19,8 +19,9 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
-            'tb_openLoop = tb_control.tb_openLoop:main'
-        ],
+    'console_scripts': [
+        'tb_openLoop = tb_control.tb_openLoop:main',
+        'tb_accdec = tb_control.tb_accdec:main'
+    ],
     },
 )

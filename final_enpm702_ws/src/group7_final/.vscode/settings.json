@@ -1,0 +1,11 @@
+{
+    "ros.distro": "humble",
+    "files.associations": {
+        "vector": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
+    }
+}

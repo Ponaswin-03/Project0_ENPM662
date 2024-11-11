@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>group7_final</name>
+  <version>0.0.0</version>
+  <description>
+  This package is designed to help a TurtleBot autonomously navigate a simulated Gazebo environment.
+  The program consists of two nodes:
+    1. camera_processor: Responsible for detecting and processing parts in the environment..
+    2. robot_controller: Subscribes to the processed part poses and drives the TurtleBot towards them. 
+  The robot identifies parts using camera data, calculates their positions in the world, and moves directly beneath them using a proportional controller. 
+  Once all parts are visited, the TurtleBot returns to its starting point and shuts down gracefully.
+  </description>
+  <maintainer email="vigneshr@umd.edu">vignesh</maintainer>
+  <maintainer email="aswin03@umd.edu">aswin</maintainer>
+  <maintainer email="Ugaurav@umd.edu">Gaurav Upadhyay</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>mage_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rcutils</depend>
+  <depend>std_msgs</depend>
+  <depend>tf2_ros</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
